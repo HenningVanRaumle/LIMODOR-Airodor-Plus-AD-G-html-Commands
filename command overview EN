@@ -1,0 +1,108 @@
+ip/msg?befehl=ZPx              timeprogram read
+ip/msg?befehl=PZxxxxxxxxxxxxx  timeprogram write
+
+PZx------------	timeprogram 1-5 write
+ZPx------------	timeprogram 1-5 read
+-P-x-----------	0 active | 1 inactive
+-P--x----------	0 off | 1 min | 2 med | 3 max
+-P---x---------	0 in/out | 1 out | 2 in | 3 through
+-P----x--------	0 MO | 1 DI | 2 MI | 3 DO | 4 FR | 5 SA | 6 SO | 7 MO-SO | 8 MO-FR | 9 SA-SO
+-P-----xxxx----	start hh/mm in minutes
+-P---------xxxx	stop hh/mm in minutes
+
+
+
+ip/msg?befehl=STA status read
+
+STAx-------------	0 program inactive | 1 humidity | 2 temperature | 3 CO2 | 4 time
+STA-x------------	? always 1
+STA--x-----------	0 filter OK | 1 filter change
+STA---xx---------	silent for xx houers
+STA-----x--------	0 in/out | 1 out | 2 in | 3 through
+STA------x-------	0 off | 1 min | 2 med | 3 max
+STA-------xx-----	°C
+STA---------xx---	%rF
+STA-----------xxx	CO2 ppm
+
+
+
+ip/msg?befehl=NVFxx  basic operation write
+
+NVFx-	0 in/out | 1 out | 2 in | 3 through
+NVF-x	0 off | 1 min | 2 med | 3 max
+
+
+
+ip/msg?befehl=STUxx  silent in hours 0-12 write
+
+
+
+ip/msg?befehl=GET Setup read
+
+GETx-----	0 Prio central off | 1 on
+GET-x----	0 display not mirrored | 1 mirrored
+GET--x---	0 filter reset inactive | 1 active
+GET---x--	? always 1
+GET----xx	-/+ Poti 01-99
+
+
+
+ip/msg?befehl=SET Setup write
+
+SETx-----	0 prio central off | 1 on
+SET-x----	0 display not mirrored | 1 mirrored
+SET--x---	0 filter reset inactive | 1 active
+SET---x--	? always 0
+SET----xx	-/+ Poti 01-99
+
+
+
+ip/msg?befehl=NETssid;password WLAN SSID / password write (Warning: plaintext / unencrypted)
+
+
+
+ip/msg?befehl=P1S  humidity program read
+
+P1Sx---	0 in/out | 1 out | 3 through
+P1S-x--	0 off | 1 min | 2 med | 3 max
+P1S--xx	%rF
+
+
+
+ip/msg?befehl=SP1xxxx  humidity program write
+
+SP1xx--	%rF (30 35 40 45 50 55 60 65 70)
+SP1--x-	0 in/out | 1 out | 3 through
+SP1---x	0 off | 1 min | 2 med | 3 max
+
+
+
+ip/msg?befehl=P2S  temperature program read
+
+P2Sx---	0 in/out | 1 out | 3 through
+P2S-x--	0 off | 1 min | 2 med | 3 max
+P2S--xx	°C
+
+
+
+ip/msg?befehl=SP2xxxx  temperature program write
+
+SP1xx--	%rF (16 18 20 22 24 26 28 30 32 34 36)
+SP1--x-	0 in/out | 1 out | 3 through
+SP1---x	0 off | 1 min | 2 med | 3 max
+
+
+
+ip/msg?befehl=P3S  CO2 program read
+
+P3Sx-----	0 in/out | 1 out | 3 through
+P3S-x----	0 off | 1 min | 2 med | 3 max
+P3S--xxxx	ppm
+
+
+
+ip/msg?befehl=SP3xxxx  CO2 program write
+
+SP3xxxx--	ppm (0500 0600 0800 1000 1200 1400 1600 1800 2000)
+SP3----x-	0 in/out | 1 out | 3 through
+SP3-----x	0 off | 1 min | 2 med | 3 max
