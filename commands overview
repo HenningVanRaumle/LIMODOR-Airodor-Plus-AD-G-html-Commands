@@ -1,0 +1,38 @@
+ip/msg?befehl=ZPx lesen
+ip/msg?befehl=PZxxxxxxxxxxxxx schreiben
+
+PZx------------	Zeitprogramm schreiben
+ZPx------------	Zeitprogramm 1-5 lesen
+ZP-x-----------	0 aktiv | 1 inaktiv
+ZP--x----------	0 off | 1 min | 2 med | 3 max
+ZP---x---------	0 ab/zu | 1 ab | 2 zu | 3 durch
+ZP----x--------	0 MO | 1 DI | 2 MI | 3 DO | 4 FR | 5 SA | 6 SO | 7 MO-SO | 8 MO-FR | 9 SA-SO
+ZP-----xxxx----	start hh/mm in Minuten
+ZP---------xxxx	stop hh/mm in Minuten
+
+
+
+ip/msg?befehl=STA Status lesen
+
+STA01000002836685
+STA11000132837652
+STAx-------------	0 Programm nicht aktiv | 1 Feuchte | 2 Temperatur | 3 CO2 | 4 Zeit
+STA-x------------	?
+STA--x-----------	0 Filter OK | 1 Filter wechseln
+STA---xx---------	Stumm für xx Stunden
+STA-----x--------	0 ab/zu | 1 ab | 2 zu | 3 durch
+STA------x-------	0 off | 1 min | 2 med | 3 max
+STA-------xx-----	°C
+STA---------xx---	%rF
+STA-----------xxx	CO2 ppm
+
+
+
+ip/msg?befehl=NVFxx Grundbetrieb schreiben
+
+NVFx-	0 ab/zu | 1 ab | 2 zu | 3 durch
+NVF-x	0 off | 1 min | 2 med | 3 max
+
+
+
+ip/msg?befehl=STUxx Stummschalten in Stunden 0-12
