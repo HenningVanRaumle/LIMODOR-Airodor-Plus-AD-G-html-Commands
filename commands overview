@@ -14,8 +14,6 @@ ZP---------xxxx	stop hh/mm in Minuten
 
 ip/msg?befehl=STA Status lesen
 
-STA01000002836685
-STA11000132837652
 STAx-------------	0 Programm nicht aktiv | 1 Feuchte | 2 Temperatur | 3 CO2 | 4 Zeit
 STA-x------------	?
 STA--x-----------	0 Filter OK | 1 Filter wechseln
