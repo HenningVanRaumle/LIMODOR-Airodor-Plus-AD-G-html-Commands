@@ -1,10 +1,10 @@
-ip/msg?befehl=ZPx lesen
-ip/msg?befehl=PZxxxxxxxxxxxxx schreiben
+ip/msg?befehl=ZPx              lesen
+ip/msg?befehl=PZxxxxxxxxxxxxx  schreiben
 
 PZx------------	Zeitprogramm 1-5 schreiben
 ZPx------------	Zeitprogramm 1-5 lesen
 -P-x-----------	0 aktiv | 1 inaktiv
--P--x----------	0 off | 1 min | 2 med | 3 max
+-P--x----------	0 aus | 1 min | 2 med | 3 max
 -P---x---------	0 ab/zu | 1 ab | 2 zu | 3 durch
 -P----x--------	0 MO | 1 DI | 2 MI | 3 DO | 4 FR | 5 SA | 6 SO | 7 MO-SO | 8 MO-FR | 9 SA-SO
 -P-----xxxx----	start hh/mm in Minuten
@@ -12,7 +12,7 @@ ZPx------------	Zeitprogramm 1-5 lesen
 
 
 
-ip/msg?befehl=STA Status lesen
+ip/msg?befehl=STA  Status lesen
 
 STAx-------------	0 Programm nicht aktiv | 1 Feuchte | 2 Temperatur | 3 CO2 | 4 Zeit
 STA-x------------	? immer 1
@@ -26,14 +26,14 @@ STA-----------xxx	CO2 ppm
 
 
 
-ip/msg?befehl=NVFxx Grundbetrieb schreiben
+ip/msg?befehl=NVFxx  Grundbetrieb schreiben
 
 NVFx-	0 ab/zu | 1 ab | 2 zu | 3 durch
-NVF-x	0 off | 1 min | 2 med | 3 max
+NVF-x	0 aus | 1 min | 2 med | 3 max
 
 
 
-ip/msg?befehl=STUxx Stummschalten in Stunden 0-12
+ip/msg?befehl=STUxx  Stummschalten in Stunden 0-12 schreiben
 
 
 
@@ -64,7 +64,7 @@ ip/msg?befehl=NETssid;password WLAN SSID / Passwort setzen (Achtung: Klartext / 
 ip/msg?befehl=P1S Feuchteprogramm lesen
 
 P1Sx---	0 ab/zu | 1 ab | 3 durch
-P1S-x--	0 off | 1 min | 2 med | 3 max
+P1S-x--	0 aus | 1 min | 2 med | 3 max
 P1S--xx	%rF
 
 
@@ -73,7 +73,7 @@ ip/msg?befehl=SP1xxxx Feuchteprogramm schreiben
 
 SP1xx--	%rF (30 35 40 45 50 55 60 65 70)
 SP1--x-	0 ab/zu | 1 ab | 3 durch
-SP1---x	0 off | 1 min | 2 med | 3 max
+SP1---x	0 aus | 1 min | 2 med | 3 max
 
 
 
@@ -89,15 +89,14 @@ ip/msg?befehl=SP2xxxx Temperaturprogramm schreiben
 
 SP1xx--	%rF (16 18 20 22 24 26 28 30 32 34 36)
 SP1--x-	0 ab/zu | 1 ab | 3 durch
-SP1---x	0 off | 1 min | 2 med | 3 max
+SP1---x	0 aus | 1 min | 2 med | 3 max
 
 
 
 ip/msg?befehl=P3S CO2programm lesen
 
-P3S10000
 P3Sx-----	0 ab/zu | 1 ab | 3 durch
-P3S-x----	0 off | 1 min | 2 med | 3 max
+P3S-x----	0 aus | 1 min | 2 med | 3 max
 P3S--xxxx	ppm
 
 
@@ -106,4 +105,4 @@ ip/msg?befehl=SP3xxxx CO2programm schreiben
 
 SP3xxxx--	ppm (0500 0600 0800 1000 1200 1400 1600 1800 2000)
 SP3----x-	0 ab/zu | 1 ab | 3 durch
-SP3-----x	0 off | 1 min | 2 med | 3 max
+SP3-----x	0 aus | 1 min | 2 med | 3 max
