@@ -6,7 +6,7 @@ ZPx------------	timeprogram 1-5 read
 -P-x-----------	0 active | 1 inactive
 -P--x----------	0 off | 1 min | 2 med | 3 max
 -P---x---------	0 in/out | 1 out | 2 in | 3 through
--P----x--------	0 MO | 1 DI | 2 MI | 3 DO | 4 FR | 5 SA | 6 SO | 7 MO-SO | 8 MO-FR | 9 SA-SO
+-P----x--------	0 MON | 1 TUe | 2 WED | 3 THU | 4 FRI | 5 SAT | 6 SUN | 7 MON-SUN | 8 MON-FRI | 9 SAT-SUN
 -P-----xxxx----	start hh/mm in minutes
 -P---------xxxx	stop hh/mm in minutes
 
