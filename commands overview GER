@@ -3,7 +3,7 @@ ip/msg?befehl=PZxxxxxxxxxxxxx  schreiben
 
 PZx------------	Zeitprogramm 1-5 schreiben
 ZPx------------	Zeitprogramm 1-5 lesen
--P-x-----------	0 aktiv | 1 inaktiv
+-P-x-----------	0 inaktiv | 1 aktiv
 -P--x----------	0 aus | 1 min | 2 med | 3 max
 -P---x---------	0 ab/zu | 1 ab | 2 zu | 3 durch
 -P----x--------	0 MO | 1 DI | 2 MI | 3 DO | 4 FR | 5 SA | 6 SO | 7 MO-SO | 8 MO-FR | 9 SA-SO
