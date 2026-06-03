@@ -17,7 +17,7 @@ ip/msg?befehl=STA status read
 STAx-------------	0 program inactive | 1 humidity | 2 temperature | 3 CO2 | 4 time
 STA-x------------	? always 1
 STA--x-----------	0 filter OK | 1 filter change
-STA---xx---------	silent for xx houers
+STA---xx---------	silent for xx hours
 STA-----x--------	0 in/out | 1 out | 2 in | 3 through
 STA------x-------	0 off | 1 min | 2 med | 3 max
 STA-------xx-----	°C
