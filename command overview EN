@@ -87,7 +87,7 @@ P2S--xx	°C
 
 ip/msg?befehl=SP2xxxx  temperature program write
 
-SP1xx--	%rF (16 18 20 22 24 26 28 30 32 34 36)
+SP1xx--	°C (16 18 20 22 24 26 28 30 32 34 36)
 SP1--x-	0 in/out | 1 out | 3 through
 SP1---x	0 off | 1 min | 2 med | 3 max
 
